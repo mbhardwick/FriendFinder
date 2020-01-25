@@ -5,8 +5,8 @@ var rootDir = require('../util/path');
 
 var router = express.Router();
 
-router.get('/survey', function(req, res) {
-	res.status(200).sendFile(path.join(rootDir, 'views', 'survey.html'));
+router.get('/', function (req, res) {
+	res.status(200).sendFile(path.join(rootDir, 'views', 'home.html'))
 });
 
 module.exports = router;
