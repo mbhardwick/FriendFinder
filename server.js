@@ -12,12 +12,14 @@ var homeRoute = require('./app/routing/homeRoute');
 var friendRoute = require('./app/routing/friendsRoute');
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/api', htmlRoutes);
 app.use('/data', friendRoute);
 app.use(homeRoute);
 
+
 app.use(function(req, res){
-	res.status(404).sendFile(path.join(__dirname, 'views', 'not-found.html'));
+	res.status(404).sendFile(path.join(__dirname, 'app', 'public', 'survey.html'));
 });
 
 app.listen(PORT, function(){

@@ -1,18 +1,16 @@
 var path = require('path');
 var express = require('express');
 
-var rootDir = require('../util/path');
-
 var router = express.Router();
 
 var friendsData = require('../data/friends');
 
-router.get('/friends', function (req, res) {
+router.get('/data/friends', function (req, res) {
 	console.log(friendsData);
 	res.json(friendsData);
 });
 
-router.post('/friends', function(req, res) {
+router.post('/data/friends', function(req, res) {
 	console.log(req.body);
 	
 	//stores user's input

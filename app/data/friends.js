@@ -1,4 +1,4 @@
-var friendsArray = [
+var friendsData = [
 	{
 		"name":"Rose",
 		"photo":"https://vignette.wikia.nocookie.net/goldengirls/images/9/9f/RoseNylund1.jpg/revision/latest?cb=20100305000702",
@@ -63,4 +63,4 @@ var friendsArray = [
 
 ];
 
-module.exports = friendsArray;
+module.exports = friendsData;
