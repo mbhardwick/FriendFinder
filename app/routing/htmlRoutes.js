@@ -1,10 +1,17 @@
-var path = require('path');
-var express = require('express');
+// Dependencies
+var path = require("path");
 
-var router = express.Router();
+//Routing
+module.exports = function (app) {
 
-router.get('/survey', function(req, res) {
-	res.status(200).sendFile(path.join(__dirname + '/../public/survey.html'));
-});
+	app.get("/survey", function (req, res) {
+		res.sendFile(path.join(__dirname, "../public/survey.html"));   
 
-module.exports = router;
+	});
+
+	// If no matching route default home
+	app.get("*", function (req, res) {
+		res.sendFile(path.join(__dirname, "../public/home.html"));
+	});
+
+};
