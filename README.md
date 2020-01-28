@@ -4,7 +4,7 @@ In this activity, you'll build a compatibility-based "FriendFinder" application 
 
 ## Getting Started
 
-Try out the Friend Finder here: * [Friend Finder]()
+Try out the Friend Finder here: https://git.heroku.com/ancient-eyrie-28658
 
 ## Deployment
 
